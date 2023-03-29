@@ -35,7 +35,7 @@ describe('check if wordle() algorithm works for anagram', () => {
 }); 
 
 
-
+//Check if outcome is an array with object on correct places
 describe('check if wordle() algorithm works for anagram with two same letters in both words', () => {
     it('gives back array with objects as expected result', () => {
         const outcome = wordle('cakla', 'axlar');
@@ -48,20 +48,3 @@ describe('check if wordle() algorithm works for anagram with two same letters in
     }); 
 }); 
 
-// There is bug when there are two same letters in guessed word but ony one in correct
-
-/*
-describe('check if wordle() algorithm works for other word', () => {
-    it('gives back  first A as misplaced', () => {
-        const outcome = wordle('cykla', 'axlar');
-        expect(outcome[0].result).toBe('misplaced');
-    });
-    it('gives back letter L as incorrect', () => {
-        const outcome = wordle('cykla', 'axlar');
-        expect(outcome[2].result).toBe('misplaced');
-    });
-    it('gives back letter second A as incorrect', () => {
-        const outcome = wordle('cykla', 'axlar');
-        expect(outcome[3].result).toBe('incorrect');
-    }); 
-}); */
